@@ -1,0 +1,38 @@
+<h2>スケジュール編集</h2>
+
+  <%= render "shared/error-message",obj: @schedule %>
+  <%= form_with model: @schedule do |f| %>
+
+	<table class = "make">
+		<tr>
+		  <th><%= f.label :title, "タイトル" %></th>
+		  <td><%= f.text_field :title %></td>
+		</tr>
+		<tr>
+		  <th><%= f.label :startday, "開始日" %></th>
+		  <td><%= f.date_field :startday %></td>
+		</tr>
+		<tr>
+		  <th><%= f.label :finishday, "終了日" %></th>
+		  <td><%= f.date_field :finishday %></td>
+		</tr>
+		<tr>
+		  <th><%= f.label :allday, "終日" %></th>
+		  <td><%= f.check_box :allday %>
+		  <br>終日の場合はチェックを入れます</td>
+		</tr>
+		<tr>
+		  <th><%= f.label :memo, "スケジュールメモ" %></th>
+		  <td class = "memo"><%= f.text_area :memo ,:size=>"50x9" %></td>
+		</tr>
+	</table>
+
+	<div class = "lists">
+		<ul>
+		  <li><%= f.submit "スケジュールを更新する", class:"submit" %></li>
+		  <li id = "index"><%= link_to "スケジュール一覧に戻る", :schedules ,class:"line" %></li>
+		</ul>
+	</div>
+  <% end %>
+
+<%= render "shared/footer" %>

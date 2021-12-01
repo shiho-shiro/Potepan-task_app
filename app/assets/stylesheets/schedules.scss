@@ -1,0 +1,77 @@
+table{
+	margin-left: 20px;
+}
+th {
+	background-color: #ffdfdf;
+}
+td {
+	background-color: #f1c8c861;
+	text-align: center;
+}
+h2 {
+	margin-top: 150px;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+.main-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 5em;
+
+}
+.main{
+	margin-bottom: 6em;
+
+}
+
+.list{
+	color: #fff;
+	margin: 10px 0 0px 13px;
+	font-family: "ヒラギノ丸ゴ ProN";
+	background-color:#FFD5EC;
+	width: 180px;
+	padding: 4px 3px;
+	border-radius: 20px;
+}
+.index th {
+	padding: 10px 30px;
+}
+.index td {
+	padding: 10px 25px;
+}
+.make table{
+	width: 100%;
+}
+.make th{
+	width: 150px;
+	height: 50px
+}
+.make td{
+	width: 400px;
+}
+.memo th{
+	height: 200px;
+}
+input[type = "text"]{
+	width: 370px;
+	height: 30px;
+	font-size: medium;
+}
+input[type = "date"]{
+	width: 370px;
+	height: 30px;
+	font-size: 16px;
+}
+
+.detail th{
+	padding: 10px 20px;
+}
+.detail-m th{
+	height: 100px;
+}
+.detail-m td{
+	padding: 0 15px;
+	text-align: center;
+}
+

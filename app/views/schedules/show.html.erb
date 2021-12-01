@@ -1,0 +1,47 @@
+<h2>スケジュール詳細</h2>
+
+  <table class = "detail">
+    <tr>
+      <th>タイトル</th>
+      <td><%= @schedule.title %></td>
+    </tr>
+
+    <tr>
+      <th>開始日</th>
+      <td>
+        <% start = @schedule.startday%>
+        <%= start.strftime("%Y年%m月%d日")  %>
+      </td>
+
+    </tr>
+
+    <tr>
+      <th>投稿日時</th>
+      <td><%= @schedule.updated_at.to_s(:datetime_jp)%></td>
+    </tr>
+
+    <tr>
+      <th>終日</th>
+      <td><% if @schedule.allday == true %>
+				 ◯
+				<% else %>
+
+				<% end %>
+    </tr>
+
+    <tr class = "detail-m">
+      <th>スケジュールメモ</th>
+      <td><%= @schedule.memo%></td>
+    </tr>
+  </table>
+
+
+<div class = "lists">
+	<ul>
+		<li id = "index"><%= link_to "スケジュール一覧に戻る", :schedules ,class:"line" %></li>
+		<li id = "make"><%= link_to "スケジュールを編集する", [:edit_schedule] ,class:"line" %></li>
+		<li id = "bye"><%= link_to "スケジュールを削除する", :schedule, method: :delete , data:{confirm: "本当に削除しますか？"} ,class:"line" %></li>
+	</ul>
+</div>
+
+<%= render "shared/footer" %>

@@ -1,0 +1,79 @@
+html {
+	min-height: 100%;
+	position: relative;
+  }
+header{
+	position: absolute;
+    top: 0;
+	left: 0;
+	color: #fff;
+	background-color:#c52f24;
+	width: 100%;
+	padding:10px;
+
+}
+body{
+	margin: 0;
+}
+footer{
+	padding: 10px 10px 10px 10px;
+	background-color: #c52f24;
+	color: #fff;
+	width: 100%;
+	margin-top: auto;
+
+}
+
+footer span{
+	margin-left: 20px;
+}
+
+.lists li{
+	margin-top: 5px;
+	list-style: none;
+	font-family: "ヒラギノ丸ゴ ProN";
+}
+.notice{
+	font-size: 18px;
+	font-family: "ヒラギノ丸ゴ ProN" ;
+	text-align: center;
+	width: 250px;
+	margin:10px 20px;
+	color: #fff;
+	background-color: #FF4F02;
+	padding: 10px 0px 10px 0px;
+	border-radius: 20px;
+}
+input[type="submit"]{
+	width: 220px;
+	height: 40px;
+	font-size: 16px;
+}
+.line{
+	text-decoration: none;
+	margin-left: 5px;
+}
+.submit {
+	margin-right: 50px;
+}
+#index{
+	color: #fff;
+	background-color: #CCFFFF;
+	width: 190px;
+	padding: 4px 3px;
+	border-radius: 20px;
+}
+#make{
+	color: #fff;
+	background-color:#CBFFD3;
+	width: 190px;
+	padding: 4px 3px;
+	border-radius: 20px;
+}
+#bye{
+	color: #fff;
+	background-color:#FFDBC9;
+	width: 190px;
+	padding: 4px 3px;
+	border-radius: 20px;
+}
